@@ -47,13 +47,9 @@ class data<T extends CanSayHello>{}
 public class Main {
     public static void main(String[] args) {
 
-        Warga warga = new Warga("joko");
-        Data<Warga> wargaData = new Data<>(warga);
+        Data<Warga> wargaData = new Data<>(new Warga("joko"));
 
         wargaData.getData().SayHello();
 
-
     }
-
-
 }
